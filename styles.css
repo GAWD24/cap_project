@@ -1,96 +1,135 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    background-color: black;
-    /* display: flex;
-    justify-content: center; */
-
+    box-sizing: border-box;
 }
-nav{
-    margin: 1.5% 3%;
-    width: 93%;
-    /* background-color: aqua; */
-    display: flex;
-    color: white;
-    justify-content: space-between;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000;
 }
-.navbar{
-    width: 15rem;
-    display: flex;
-    /* background-color: red; */
-    justify-content: space-between;
-}
-.divider{
-    width: 100%;
-    border: 1px solid #ccc;
-}
-.pagelink{
-    color: #ccc;
-    text-decoration: none;
-}
-.pagelink:hover{
-    /* background-color:rgb(83, 44, 5); */
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-}
-main{
-    justify-content: center;
-    /* background-color: #ccc; */
-    
-}
-.landing > h1{
-    text-align: center;
-    z-index: 100;
-    color: aliceblue;
-    font-size: 120px;
-    
-}
-.landingimg{
-    padding: 48px;
+.container {
+    width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
-    width: 1344px;
-    height: 672px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/9e62/9132/0ccc80a038c22e6a5d6c6eaa731fa596?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VokByHUH8bxtIwsmTWQJFT4oiGzTuaTWL6Ufn-lbf7qyLYjWJ4QAWZxAM7HnWRjG1OzYgaH8w4FMZKIVm~ZMYPDewH8ElxksLvxc0eXgVHfdV227h8uV8svrJ2DmvFEw49HHNqLPghlI5mpNCvKidDx0HLnZn1zE-1JGXcFjGBLj~N3lwm7-KX5qSGkTMz93NV0WVxL~a6s4D~Pn6zBqprNKgRyjPVtB4PTb-u6gedD3C335WxsOTq9duCWkBwYBbLue6RlrqOAXvxYLVLJp6fQTdl1ryIVu14hVfThgq6neDa2UNwxnOeruRYkmhFhWUDIxCkzUFNOVGSs-FygILw__);
-    background-size:cover; 
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: center;    
+    padding: 0 20px;
 }
-.projects{
-    scale: 0.95;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    height: auto;
-    gap: 20px;
-    justify-content: center;
-    align-content: start;
-    margin: 5px;
-    margin-top: 5rem;
-    
-    /* overflow: hidden; */
-    
-}
-.project-list{
-    color: #ccc;
-    border-radius: 8px;
-    line-height: 24px;
-
-}
-
-.project-list img{
-    height: auto;
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
     width: 100%;
+    z-index: 1000;
 }
-.description{
-    color: #ccc;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    font-family: MuseoModerno;
+    font-size: 24px;
+    font-weight: bold;
+}
+.links {
+    display: none;
+}
+.links a {
+    font-family: Chivo;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#divider{
+    display: block;
+    width: 200vw;
+    border-bottom: 1px solid white;
+}
+.intro {
+    padding: 100px 0 50px;
+    text-align: center;
+}
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.intro-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.portfolio {
+    padding: 50px 0;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.project-list img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.project-list h3 {
+    margin-top: 10px;
+}
+.project-list p {
+    color: #888;
+    font-size: 14px;
+}
+.about {
+    padding: 50px 0;
+    font-family: Chivo;
     font-size: 48px;
     line-height: 52px;
+    letter-spacing: -0.01em;
     text-align: center;
-    margin: 5rem 18rem ;
 }
-footer{
+.free{
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    color: #807a7a;
+}
+.spacer{
+    display: none;
+    height: 154px ;
+    width: 45% ;
+}
+.feelfree{
+    height: 154px;
+    width: 45%;
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
+}
+
+
+@media (min-width: 768px) {
+    .links {
+        display: block;
+    }
+    .intro h1 {
+        font-size: 48px;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .spacer{
+        display: block;
+    }
+}
+@media (min-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
