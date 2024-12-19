@@ -112,6 +112,98 @@ nav {
     text-decoration-skip-ink: none;
 
 }
+.contact{
+    padding: 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact > h1{
+    font-family: Chivo;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+
+}
+.inputs {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 40px 0;
+}
+.inputs input {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #333;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+.inputs input:hover{
+    border-color: #7e22ce;
+}
+
+.send {
+    width: 50%;
+    padding: 12px;
+    background-color: #460b7d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.send:hover {
+    background-color: #7e22ce;
+}
+.skip-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5e6268;
+    text-decoration: none;
+    font-size: 14px;
+}
+.skip-link:hover {
+    color: #bac4d4;
+}
+footer >.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.foot{
+    font-family: Chivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #FFFFFF99;
+}
+.footbutton{
+    background: transparent;
+    padding: 5px;
+    border: 0.4px solid #FFFFFF99;
+    border-radius: 10%;
+    color: #FFFFFF;
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
 
 
 @media (min-width: 768px) {
