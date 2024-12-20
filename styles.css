@@ -73,6 +73,11 @@ nav {
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.project-list img:hover{
+    scale: 1.05;
+    cursor: pointer;
 }
 .project-list h3 {
     margin-top: 10px;
@@ -100,7 +105,7 @@ nav {
     width: 45% ;
 }
 .feelfree{
-    height: 154px;
+    height: 100%;
     width: 45%;
     font-family: Archivo;
     font-size: 24px;
@@ -203,6 +208,10 @@ footer >.container{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
+}
+.footbutton a{
+    color:#FFFFFF ;
+    text-decoration: none;
 }
 
 
