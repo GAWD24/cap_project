@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6;
 }
 body {
     font-family: Arial, sans-serif;
@@ -34,6 +35,7 @@ nav {
 }
 .links {
     display: none;
+    /* flex-direction: column; */
 }
 .links a {
     font-family: Chivo;
@@ -50,9 +52,10 @@ nav {
     padding: 100px 0 50px;
     text-align: center;
 }
-.intro h1 {
+.intro > h1 {
+    line-height:1.6;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 .intro-image {
     width: 100%;
@@ -60,6 +63,22 @@ nav {
     object-fit: cover;
     border-radius: 10px;
 }
+.menu-icon {
+    display: block;
+}
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
 .portfolio {
     padding: 50px 0;
 }
@@ -220,13 +239,21 @@ footer >.container{
         display: block;
     }
     .intro h1 {
-        font-size: 48px;
+        font-size: 70px;
     }
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
     .spacer{
         display: block;
+    }
+    .menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #menu-toggle {
+        display: none;
     }
 }
 @media (min-width: 1024px) {
