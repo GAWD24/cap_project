@@ -63,13 +63,7 @@ nav {
     object-fit: cover;
     border-radius: 10px;
 }
-.menu-icon {
-    display: block;
-}
 
-#menu-toggle:checked ~ .nav-links {
-    display: flex;
-}
 
 
 
@@ -246,14 +240,6 @@ footer >.container{
     }
     .spacer{
         display: block;
-    }
-    .menu-icon {
-        display: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-    #menu-toggle {
-        display: none;
     }
 }
 @media (min-width: 1024px) {
